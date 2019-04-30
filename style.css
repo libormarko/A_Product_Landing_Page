@@ -1,0 +1,280 @@
+/* global element styling */
+
+* {
+  margin: 0;
+  padding: 0; /* Setting all elements to have zero margins, and zero padding, thus making them look the same in all browsers. */
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F3F4F5;
+  color: #1652A8;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #1652A8;
+  text-decoration: none;
+}
+
+/* global classes styling */
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-color: #EEB335;
+  border-radius: 10px;
+  background: #EEB335;
+  cursor: pointer;
+}
+
+.grid {
+  display: flex;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 60px;
+  padding: 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #EEB335;
+  color: #1652A8;
+}
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+.logo {
+  min-width: 400px;
+  display: flex;
+  width: 50vw;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media (max-width: 650px) {
+  .logo {
+    min-width: 400px;
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+nav {
+  font-weight: 700;
+}
+@media (max-width: 850px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+
+nav ul {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-right: 50px;
+}
+@media (max-width: 850px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+#values:before {            /* Creating space above the target of a jump link. */
+  display: block;
+  content: "";
+  height: 130px;
+  margin: -50px 0 0;
+}
+
+#values .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 135px;
+  width: 20vw;
+  color: #0448A8;
+  font-size: 45px;
+}
+@media (max-width: 550px) {
+  #values .icon {
+    display: none;
+  }
+}
+
+#values .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 135px;
+  width: 80vw;
+}
+@media (max-width: 550px) {
+  #values .desc {
+    width: 100%;
+    text-align: center;
+    height: 150px;
+    margin: 0 30px;
+  }
+}
+@media (max-width: 650px) {
+  #values {
+    margin-top: 0;
+  }
+}
+
+#hero {
+  margin: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 250px;
+}
+
+#hero input[type="email"] {
+  max-width: 275px;
+  width: 100%;
+  padding: 7px;
+}
+@media (max-width: 650px) {
+  #hero {
+    margin-top: 130px;
+  }
+}
+
+#hero input[type="submit"] {
+  max-width: 160px;
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  border: 0;
+  background-color: #EEB335;
+  color: #1652A8;
+}
+
+#hero input[type="submit"]:hover {
+  background-color: #F36D60;
+  transition: background-color 1s;
+}
+
+#tips {
+  padding-top: 130px;           /* Creating space above the target of a jump link. */
+  margin-top: -50px;
+  -webkit-background-clip: content-box;
+  background-clip: content-box; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tips iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+#tarifs {
+  padding-top: 130px;
+  margin-top: -50px;
+  -webkit-background-clip: content-box;
+  background-clip: content-box;           /* Creating space above the target of a jump link. */
+  margin-bottom: 140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#tarifs #rateS, #tarifs #rateM, #tarifs #rateL {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%  / 4.5);
+  margin: 25px;
+  border: 3px solid #0448A8;
+  border-radius: 8px;
+}
+@media (max-width: 900px) {
+  #tarifs {
+    flex-direction: column;
+  }
+  #tarifs #rateS, #tarifs #rateM, #tarifs #rateL {
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  #tarifs #rateS button, #tarifs #rateM button, #tarifs #rateL button {
+    min-width: 20vw;
+    width: 100%;
+    margin: 25px 0;
+  }
+}
+
+#tarifs #rateS .level, #tarifs #rateM .level, #tarifs #rateL .level {
+  background-color: #F36D60;
+  border-radius: 5px;
+  color: #0448A8;
+  padding: 20px 0px 20px 0px;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+#tarifs #rateS ul, #tarifs #rateM ul, #tarifs #rateL ul {
+  margin: 50px 0;
+}
+
+#tarifs #rateS ul li, #tarifs #rateM ul li, #tarifs #rateL ul li {
+  padding: 10px 0;
+}
+
+#tarifs #rateS button, #tarifs #rateM button, #tarifs #rateL button {
+  border: 0;
+  max-width: 10vw;
+  width: 100%;
+  margin: 25px 0;
+  background-color: #EEB335;
+  color: #0448A8;
+  font-weight: 700;
+}
+
+#tarifs #rateS button:hover, #tarifs #rateM button:hover, #tarifs #rateL button:hover {
+  background-color: #F36D60;
+  transition: background-color 1s;
+}
