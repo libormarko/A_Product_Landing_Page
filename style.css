@@ -115,6 +115,10 @@ nav ul {
   }
 }
 
+nav li:hover {
+  text-decoration: underline overline;
+}
+
 #values:before {            /* Creating space above the target of a jump link. */
   display: block;
   content: "";
