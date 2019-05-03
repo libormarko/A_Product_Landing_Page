@@ -51,6 +51,8 @@ a {
   display: flex;
 }
 
+/* header */
+
 header {
   position: fixed;
   top: 0;
@@ -119,6 +121,8 @@ nav li:hover {
   text-decoration: underline overline;
 }
 
+/* why us - values */
+
 #values:before {            /* Creating space above the target of a jump link. */
   display: block;
   content: "";
@@ -162,6 +166,8 @@ nav li:hover {
   }
 }
 
+/* submit form */
+
 #hero {
   margin: 50px 0px;
   display: flex;
@@ -198,6 +204,8 @@ nav li:hover {
   transition: background-color 1s;
 }
 
+/* tips - video */
+
 #tips {
   padding-top: 130px;           /* Creating space above the target of a jump link. */
   margin-top: -50px;
@@ -212,6 +220,8 @@ nav li:hover {
   max-width: 560px;
   width: 100%;
 }
+
+/* tarifs */
 
 #tarifs {
   padding-top: 130px;
@@ -281,4 +291,30 @@ nav li:hover {
 #tarifs #rateS button:hover, #tarifs #rateM button:hover, #tarifs #rateL button:hover {
   background-color: #F36D60;
   transition: background-color 1s;
+}
+
+/* footer */
+
+footer {
+  margin-top: 10px;
+  background-color: #ddd;
+  padding: 10px;
+  padding-right: 30px;
+}
+  
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+}
+    
+footer li {
+  padding: 0 10px;
+}
+  
+span {
+  margin-top: 5px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
 }
