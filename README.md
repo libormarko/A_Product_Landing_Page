@@ -9,8 +9,8 @@ This is my other web development project. I built this product landing page with
 * CSS Flexbox
 
 ## Technologies used
-* HTML, HTML5
-* CSS, CSS3, CSS Flexbox
+* HTML5
+* CSS3, CSS Flexbox
 
 ## Setup and Run
 1. Download the project files
