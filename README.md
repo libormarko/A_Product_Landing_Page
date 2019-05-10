@@ -2,7 +2,7 @@
 This is my other web development project. I built this product landing page with front-end web development technologies. This project demonstrates the principles of responsive web design. I wrote a blog post about the project, you can find it on my [medium profile](https://medium.com/@marko.libor/car-rental-product-landing-page-add10d33ce9e).
 
 ## What I learned
-* Basic HTML and HTML5
+* Basic HTML
 * Basic CSS
 * Applied Visual Design
 * Responsive Web Design Principles
